@@ -14,6 +14,7 @@
 </head>
 <body>
     <header>
+       <div class="container">
         <img src="img/logo.svg" alt="Ten's Jazz School">
         <nav>
             <a href="#">Inicio</a>
@@ -21,14 +22,16 @@
             <a href="a">Eventos</a>
             <a href="a">Contato</a>
         </nav>
-        <a href="#" class="button"> Se inscreva</a>
+        <a href="#" class="button nt-1 nb-1 nx-auto"> Se inscreva</a>
+       </div>
     </header>
     <main>
-        <section>
-            <img src="img/hero-img.svg" alt="Banda de Jazz tocando">
+        <section class="hero-section">
+            <div class="container row-reverse">
+                <img src="img/hero-img.svg" alt="Banda de Jazz tocando">
             <div>
-          <h1>Crie algo <span>impactante</span> com musicas</h1>
-          <p>Adentre o mundo mágico do jazz, onde as notas dançam em
+          <h1 class="mt-2">Crie algo <span class="text-primary decoration">impactante</span> com musicas</h1>
+          <p class="mt-2 mb-2">Adentre o mundo mágico do jazz, onde as notas dançam em
             perfeita harmonia e os instrumentos ganham vida própria.
              É como se o próprio ar vibrasse ao ritmo sedutor do contrabaixo,
             enquanto o piano desvenda segredos musicais nas teclas negras e brancas.
@@ -45,11 +48,12 @@
             experimentar a vida em todas as suas cores e matizes.</p>
             <a href="#" class="button">Comece agora</a>
         </div>
+            
         </section>
-        <section>
+        <section class="course-section">
             <div class="cards">
 
-            <article>
+            <article class="card">
                 <img src="img/piano.png" alt="Piano Popular">
                 <strong>Piano popular</strong>
                 <p>O piano popular é uma fonte inesgotável de expressão e emoção,
@@ -75,7 +79,7 @@
                     <img src="img/arrow-right.svg" alt="Ir para pagina do curso">
                 </a>
             </article>
-                <article>
+                <article class="card">
                 <img src="img/clef.png" alt="icone da clave de sol"><strong>Teoria musical</strong>
                     <p>A teoria musical estuda os elementos da música,
                          como notação, ritmo, melodia, harmonia e forma.
@@ -84,7 +88,7 @@
                             a estrutura das composições e escalas, tonalidades e modos.
                              É essencial para músicos e compositores, facilitando a comunicação,
                               interpretação e criação de obras musicais.</p>
-            <article>
+            <article class="card">
                 <img src="img/sax.png" alt="icone de saxafone">
                 <strong>Sex Alto</strong>
                 <p>O saxofone, um instrumento mágico e cativante,
@@ -104,7 +108,7 @@
                     lugares inexplorados e despertando emoções adormecidas.
                     Um instrumento único, uma voz sem igual, o saxofone é a expressão
                      da liberdade musical em suas mãos.</p>
-            <article>
+            <article class="card">
             <img src="img/drums.png" alt="icone de bateria">
             <strong>Bateria</strong>
             <p>A bateria, o kit de percussão que faz todo mundo bater o pé (literalmente).
@@ -121,16 +125,17 @@
             </article>
         </div>
 
-            <h2>E <span>varios</span> outros!</h2>
-            <a href="#">Conhecer cursos</a>
+            <h2 class="text-center">E <span class="text-primary ">varios</span> outros!</h2>
+            <a href="#" class="botton nt-2 nx-auto">Conhecer cursos</a>
             
         </section>
     </main>
 
-    <footer>
-        <div>
-            <img src="img/logo.svg" alt="Ton's Jazz School">
-            <p>🎺 Descubra a magia do Jazz! 🎶
+    <footer>      
+       <div class="container">
+        <div class="about-column">
+            <img src="img/logo.svg" alt="Ton's Jazz School" class="nb-1" width="106" height="44">
+            <p class="nb-2">🎺 Descubra a magia do Jazz! 🎶
 
                 <br>Prepare-se para uma experiência musical única e envolvente com o nosso incrível Anúncio Criativo de Jazz!
                 
@@ -148,15 +153,16 @@
                 
                 <br>🎷🎹🎶 Seja Jazz! Seja Vida! 🎶🎹🎷</p>
         </div> 
-        <nav>
+        <nav class="mb-2">
             <a href="#">Inicio</a>
-            <a href="a">Cursos</a>
-            <a href="a">Eventos</a>
-            <a href="a">Contato</a>
+            <a href="#">Cursos</a>
+            <a href="#">Eventos</a>
+            <a href="#">Contato</a>
         </nav>
-        <form>
-            <label for="email">Receba materiais gratuitos no seu email</label>
-            <input type="text" name="email" placeholder="Digite seu email">
+        <form class="newsletter-form">
+            <label for="email" class="mb-1">Receba materiais gratuitos no seu email</label>
+            <input type="text" name="email" id="email" class="mb-1" placeholder="Digite seu email">
+            <button class="button nb-2">Quero Receber</button>
         </form>     
     </footer>
     
